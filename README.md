@@ -62,7 +62,7 @@ uuid生成器 [点击生成](https://99688988.xyz/uuid-generator/)
 如果你熟悉直接拼接链接，它大概长这个样子（把中括号里的内容替换成你的真实信息）：
 vless://你的UUID@你的Tunnel域名（或者优选域名）:443?encryption=none&security=tls&sni=你的Tunnel域名&insecure=0&allowInsecure=0&type=ws&host=你的Tunnel域名&path=%2Fvless#Railway-Singbox
 
-如果速度太慢在 地址 (Address) 可换成优选域名 [点击获取优选域名](https://kjgx668.blogspot.com/2023/08/cloudflare-ip-cloudflare-cf.html/)
+如果速度太慢在 地址 (Address) 可换成优选域名 [点击获取优选域名](https://kjgx668.blogspot.com/2023/08/cloudflare-ip-cloudflare-cf.html)
 
 ---
 
