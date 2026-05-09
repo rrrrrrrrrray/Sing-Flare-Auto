@@ -1,5 +1,5 @@
 ⚠️ 严正声明 (License & Copyright)
-本项目采用 CC BY-NC 4.0 协议进行分发。
+本项目基于 [zzzhhh1/Sing-Flare-Auto](https://github.com/zzzhhh1/Sing-Flare-Auto) 修改，采用 CC BY-NC 4.0 协议进行分发。
 无论你是直接 Fork、修改源码还是重新分发，都必须保留原作者的署名，且严禁用于任何商业牟利行为。一经发现侵权，作者保留追究责任的权利。
 
 # 🚀 科学上网节点极速部署指南 (Sing-box + Cloudflare Tunnel)
@@ -41,10 +41,11 @@
 
 在部署平台（如 Koyeb）创建新应用时，请确保设置以下**环境变量 (Environment Variables)**：
 
-| 变量名 | 说明 | 示例 |
-| :--- | :--- | :--- |
-| `UUID` | 你的节点连接密码 | `你的随机UUID` |
-| `ARGO_TOKEN` | Cloudflare Tunnel 的 Token | `eyJh...` |
+| 变量名 | 说明 | 默认值 | 示例 |
+| :--- | :--- | :--- | :--- |
+| `UUID` | 你的节点连接密码 | *(必填)* | `你的随机UUID` |
+| `ARGO_TOKEN` | Cloudflare Tunnel 的 Token | *(必填)* | `eyJh...` |
+| `WS_PATH` | WebSocket 路径 | `/vless` | `/my-secret-path` |
 
 uuid生成器 [点击生成](https://99688988.xyz/uuid-generator/)
 
@@ -79,6 +80,4 @@ vless://你的UUID@你的Tunnel域名（或者优选域名）:443?encryption=non
 ---
 > **Disclaimer**: 本项目仅供学习和交流网络协议之用，请在遵守当地法律法规的前提下使用。
 >
-> ⚠️ 严正声明 (License & Copyright)
-本项目采用 CC BY-NC 4.0 协议进行分发。
-无论你是直接 Fork、修改源码还是重新分发，都必须保留原作者的署名，且严禁用于任何商业牟利行为。一经发现侵权，作者保留追究责任的权利。
+> ⚠️ 原作者：[zzzhhh1](https://github.com/zzzhhh1) | 原项目：[Sing-Flare-Auto](https://github.com/zzzhhh1/Sing-Flare-Auto)
