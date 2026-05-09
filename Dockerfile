@@ -6,7 +6,7 @@ ARG TARGETARCH
 
 WORKDIR /app
 
-RUN apk add --no-cache ca-certificates bash wget tar && \
+RUN apk add --no-cache ca-certificates bash wget tar libc6-compat && \
     ARCH=$(case "$TARGETARCH" in amd64) echo "amd64" ;; arm64) echo "arm64" ;; *) echo "amd64" ;; esac) && \
     wget -q https://github.com/SagerNet/sing-box/releases/download/v${SING_BOX_VERSION}/sing-box-${SING_BOX_VERSION}-linux-${ARCH}.tar.gz && \
     tar -xzf sing-box-${SING_BOX_VERSION}-linux-${ARCH}.tar.gz && \
